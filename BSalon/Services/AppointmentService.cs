@@ -9,7 +9,7 @@ namespace BeautySalonApp.Services
 {
     public class AppointmentService
     {
-        public Appointment SetAppointmentForCustomer(DateTime date, Service service)
+        public Appointment CreateAppointment(DateTime date, Service service)
         {
             Appointment appointment = new Appointment();
 
@@ -21,22 +21,7 @@ namespace BeautySalonApp.Services
 
         public void CalculateDiscountPrice(Customer customer)
         {
-            if (customer.Status == Status.Normal)
-            {
-                customer.Appointment.Service.PriceWithDiscount = Math.Round(customer.Appointment.Service.Price - 0.1m * customer.Appointment.Service.Price);
-            }
-            if (customer.Status == Status.Brown)
-            {
-                customer.Appointment.Service.PriceWithDiscount = Math.Round(customer.Appointment.Service.Price - 0.2m * customer.Appointment.Service.Price);
-            }
-            if (customer.Status == Status.Silver)
-            {
-                customer.Appointment.Service.PriceWithDiscount = Math.Round(customer.Appointment.Service.Price - 0.3m * customer.Appointment.Service.Price);
-            }
-            if (customer.Status == Status.Gold)
-            {
-                customer.Appointment.Service.PriceWithDiscount = Math.Round(customer.Appointment.Service.Price - 0.4m * customer.Appointment.Service.Price);
-            }
+           
         }
     }
 }

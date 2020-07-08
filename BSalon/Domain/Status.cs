@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace BeautySalonApp.Domain
 {
-    public enum Status
+    public class Status
     {
-        Gold = 40,
-        Silver = 30,
-        Brown = 20,
-        Normal = 10
+        public string Name { get; set; }
+
+        public int Discount { get; set; }
     }
 }

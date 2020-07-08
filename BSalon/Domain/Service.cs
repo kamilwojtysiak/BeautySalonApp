@@ -11,13 +11,5 @@ namespace BeautySalonApp.Domain
         public string Name { get; set; }
 
         public decimal Price { get; set; }
-
-        public decimal PriceWithDiscount { get; set; }
-
-        public Service(string name, decimal price)
-        {
-            Name = name;
-            Price = price;
-        }
     }
 }

@@ -12,6 +12,8 @@ namespace BeautySalonApp.Domain
 
         public Service Service { get; set; }
 
+        public decimal Price { get; set; }
+
         public override string ToString()
         {
             return $"\nDate: {Date} \nService name: {Service.Name} \nPrice: {Service.Price}PLN \nPrice with discount: {Service.PriceWithDiscount} \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";

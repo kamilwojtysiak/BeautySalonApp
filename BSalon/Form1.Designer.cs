@@ -51,7 +51,8 @@ namespace BSalon
             this.ClientSize = new System.Drawing.Size(800, 400);
             this.Controls.Add(this.btnCreateDatabase);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SQL Data Access";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
