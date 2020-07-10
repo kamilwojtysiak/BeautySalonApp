@@ -31,28 +31,36 @@ namespace BSalon
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCreateDatabase = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Customers = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCreateDatabase
+            // dataGridView1
             // 
-            this.btnCreateDatabase.Location = new System.Drawing.Point(306, 109);
-            this.btnCreateDatabase.Name = "btnCreateDatabase";
-            this.btnCreateDatabase.Size = new System.Drawing.Size(98, 23);
-            this.btnCreateDatabase.TabIndex = 0;
-            this.btnCreateDatabase.Text = "Create Database";
-            this.btnCreateDatabase.UseVisualStyleBackColor = true;
-            this.btnCreateDatabase.Click += new System.EventHandler(this.btnCreateDatabase_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(108, 167);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(438, 122);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // Customers
+            // 
+            this.Customers.Location = new System.Drawing.Point(272, 65);
+            this.Customers.Name = "Customers";
+            this.Customers.Size = new System.Drawing.Size(103, 23);
+            this.Customers.TabIndex = 2;
+            this.Customers.Text = "Display Customers";
+            this.Customers.UseVisualStyleBackColor = true;
+            this.Customers.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 400);
-            this.Controls.Add(this.btnCreateDatabase);
+            this.ClientSize = new System.Drawing.Size(631, 390);
+            this.Controls.Add(this.Customers);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "SQL Data Access";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -60,6 +68,8 @@ namespace BSalon
         #endregion
 
         private System.Windows.Forms.Button btnCreateDatabase;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Customers;
     }
 }
 

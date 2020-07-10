@@ -16,7 +16,7 @@ namespace BeautySalonApp.Domain
 
         public override string ToString()
         {
-            return $"\nDate: {Date} \nService name: {Service.Name} \nPrice: {Service.Price}PLN \nPrice with discount: {Service.PriceWithDiscount} \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+            return $"\nDate: {Date} \nService name: {Service.Name} \nPrice: {Service.Price}PLN \nPrice with discount: {Price} \n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
         }
     }
 }
