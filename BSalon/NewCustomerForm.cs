@@ -33,24 +33,7 @@ namespace BSalon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //string newCustomer = "Insert into [Customers](FirstName, LastName) Values('" + )";
-            SqlConnection con = new SqlConnection(@"Data Source = KAMIL; Initial Catalog = Customers; Integrated Security = True");
-            SqlCommand cmd = new SqlCommand("dbo.Customer", con);
-
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@FirstName", FirstName.Text);
-            cmd.Parameters.AddWithValue("@LastName", LastName.Text);
-
-            con.Open();
-
-            int i = cmd.ExecuteNonQuery();
-
-            con.Close();
-
-            if (i != 0)
-            {
-                MessageBox.Show(i + "Data Saved");
-            }
+            
         }
     }
 }

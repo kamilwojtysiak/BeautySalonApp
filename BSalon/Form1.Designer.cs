@@ -80,7 +80,6 @@ namespace BSalon
 
         #endregion
 
-        private System.Windows.Forms.Button btnCreateDatabase;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Customers;
         private System.Windows.Forms.Button button1;
