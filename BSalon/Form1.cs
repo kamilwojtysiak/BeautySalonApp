@@ -15,7 +15,7 @@ namespace BSalon
 {
     public partial class Form1 : Form
     {
-        string connectionString = @"Data Source=WOJTYSIAK;Initial Catalog=Customers;Integrated Security=True;";
+        string connectionString = @"Data Source=KAMIL;Initial Catalog=Customers;Integrated Security=True;";
 
         public Form1()
         {
@@ -33,6 +33,18 @@ namespace BSalon
 
                 dataGridView1.DataSource = dtbl;
             }    
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            NewCustomerForm newCustomer = new NewCustomerForm();
+
+            newCustomer.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
